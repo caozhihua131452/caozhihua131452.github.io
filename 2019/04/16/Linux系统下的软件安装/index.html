@@ -4,11 +4,10 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="个人博客搭建, 曹志华的博客">
-    <meta name="description" content="使用Hexo搭建个人博客
-
-准备工作~ 安装node.js —&amp;gt; npm —&amp;gt; hexo-cli~ 安装git —&amp;gt; 版本控制工具
-更换npm（nodejs package manager）源npm config set ">
+    <meta name="keywords" content="Linux系统下的软件安装, 曹志华的博客">
+    <meta name="description" content="Linux系统下的软件安装：redhat package manageryellowdog updater modified
+1. 包管理工具 - yum / rpm / apt
+yum search nginx - 从默认的仓库搜索有没有">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>个人博客搭建 | 曹志华的博客</title>
+    <title>Linux系统下的软件安装 | 曹志华的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -58,7 +57,7 @@
             
             <i class="fa fa-home"></i>
             
-            <span>Index</span>
+            <span>首页</span>
         </a>
     </li>
     
@@ -67,7 +66,7 @@
             
             <i class="fa fa-tags"></i>
             
-            <span>Tags</span>
+            <span>标签</span>
         </a>
     </li>
     
@@ -76,7 +75,7 @@
             
             <i class="fa fa-bookmark"></i>
             
-            <span>Categories</span>
+            <span>分类</span>
         </a>
     </li>
     
@@ -85,7 +84,7 @@
             
             <i class="fa fa-archive"></i>
             
-            <span>Archives</span>
+            <span>档案</span>
         </a>
     </li>
     
@@ -94,7 +93,7 @@
             
             <i class="fa fa-user-circle-o"></i>
             
-            <span>About</span>
+            <span>关于</span>
         </a>
     </li>
     
@@ -103,7 +102,7 @@
             
             <i class="fa fa-address-book"></i>
             
-            <span>Friends</span>
+            <span>朋友</span>
         </a>
     </li>
     
@@ -138,7 +137,7 @@
                 
                 <i class="fa fa-fw fa-home"></i>
                 
-                Index
+                首页
             </a>
         </li>
         
@@ -147,7 +146,7 @@
                 
                 <i class="fa fa-fw fa-tags"></i>
                 
-                Tags
+                标签
             </a>
         </li>
         
@@ -156,7 +155,7 @@
                 
                 <i class="fa fa-fw fa-bookmark"></i>
                 
-                Categories
+                分类
             </a>
         </li>
         
@@ -165,7 +164,7 @@
                 
                 <i class="fa fa-fw fa-archive"></i>
                 
-                Archives
+                档案
             </a>
         </li>
         
@@ -174,7 +173,7 @@
                 
                 <i class="fa fa-fw fa-user-circle-o"></i>
                 
-                About
+                关于
             </a>
         </li>
         
@@ -183,7 +182,7 @@
                 
                 <i class="fa fa-fw fa-address-book"></i>
                 
-                Friends
+                朋友
             </a>
         </li>
         
@@ -278,13 +277,13 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        个人博客搭建
+                        Linux系统下的软件安装
                     </div>
                 </div>
             </div>
@@ -387,7 +386,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-04-15
+                    2019-04-16
                 </div>
 
                 
@@ -403,17 +402,25 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>使用Hexo搭建个人博客</p>
-<ol>
-<li>准备工作<br>~ 安装node.js —&gt; npm —&gt; hexo-cli<br>~ 安装git —&gt; 版本控制工具</li>
-<li>更换npm（nodejs package manager）源<br>npm config set registry <img src="file:///C:\Users\Administrator\AppData\Local\Temp\ksohtml\wpsA06E.tmp.jpg" alt="img"><a href="http://registry.npm.taobao.org/" target="_blank" rel="noopener">http://registry.npm.taobao.org/</a></li>
-<li>安装hexo-cli<br>npm install -g hexo-cli</li>
-<li>使用hexo搭建博客<br>hexo init blog —&gt; 创建博客目录<br>cd blog —&gt; 进入目录<br>npm install —&gt; 安装项目依赖项</li>
-<li>编辑博客<br>把写好的markdown文件放到source/_posts目录下<br>hexo generate —&gt; 用markdown生成博客页面</li>
-<li>将博客托管到github<br>github提供了pages服务专门用来托管个人网站<br>注册github账号并登陆，创建一个托管网站代码的仓库<br>仓库的名字必须是：用户名.<img src="file:///C:\Users\Administrator\AppData\Local\Temp\ksohtml\wpsA06F.tmp.jpg" alt="img">github.io<br>修改博客的配置文件：_config.yml<br><img src="file:///C:\Users\Administrator\AppData\Local\Temp\ksohtml\wpsA070.tmp.jpg" alt="img"><a href="https://github.com/hellokitty12345678/hellokitty12345678.github.io.git" target="_blank" rel="noopener">https://github.com/hellokitty12345678/hellokitty12345678.github.io.git</a><br>deploy:<br>type: git<br>repo: 仓库的完整的URL<br>branch: master</li>
-<li>将博客部署到github<br>安装git部署器<br>npm install hexo-deployer-git –save<br>如果第一次使用git需要先配置用户名和邮箱（可以乱写）<br>git config –global user.email “<a href="mailto:1029751919@qq.com" target="_blank" rel="noopener">1029751919@qq.com</a>“<br>git config –global <img src="file:///C:\Users\Administrator\AppData\Local\Temp\ksohtml\wpsA071.tmp.jpg" alt="img">user.name “hellokitty”<br>执行部署操作<br>hexo deploy -g<br>此操作会提示输入github的账号和密码<br>输入密码时没有回显必须一气呵成的输入完成<br>否则重新执行上面的命令</li>
-<li>绑定自己的域名<br>打开阿里云的控制台 <img src="file:///C:\Users\Administrator\AppData\Local\Temp\ksohtml\wpsA072.tmp.jpg" alt="img"><a href="https://aliyun.com" target="_blank" rel="noopener">https://aliyun.com</a> 登录进去<br>进入“域名控制台” —&gt; “进入域名解析列表” —&gt; 找到自己的域名<br>—&gt; “解析设置” —&gt; “添加记录” —&gt;<br>记录类型：CNAME<br>主机记录：@<br>记录值：<img src="file:///C:\Users\Administrator\AppData\Local\Temp\ksohtml\wpsA073.tmp.jpg" alt="img">hellokitty12345678.github.io<br>在blog/source目录下创建一个名为CNAME的文件<br>文件里面写上自己的域名<br>jackfrued.top<br>重新执行部署命令<br>hexo d -g</li>
-</ol>
+                <h2 id="Linux系统下的软件安装："><a href="#Linux系统下的软件安装：" class="headerlink" title="Linux系统下的软件安装："></a>Linux系统下的软件安装：</h2><p>redhat package manager<br>yellowdog updater modified</p>
+<h4 id="1-包管理工具-yum-rpm-apt"><a href="#1-包管理工具-yum-rpm-apt" class="headerlink" title="1. 包管理工具 - yum / rpm / apt"></a>1. 包管理工具 - yum / rpm / apt</h4><ul>
+<li>yum search nginx - 从默认的仓库搜索有没有指定的软件</li>
+<li>yum install -y nginx - 安装软件</li>
+<li>yum remove -y nginx - 卸载软件</li>
+<li>yum info nginx - 查看软件相关信息</li>
+<li>yum list installed - 查看已经安装的软件</li>
+<li>yum update nginx - 更新软件</li>
+</ul>
+<h4 id="2-源代码构建安装-gcc-make"><a href="#2-源代码构建安装-gcc-make" class="headerlink" title="2. 源代码构建安装 - gcc / make"></a>2. 源代码构建安装 - gcc / make</h4><p>Apache - Web服务器<br>Nginx - Web服务器（HTTP服务器）/ 反向代理服务器</p>
+<h2 id="源代码构建安装Python3-7"><a href="#源代码构建安装Python3-7" class="headerlink" title="源代码构建安装Python3.7"></a>源代码构建安装Python3.7</h2><h4 id="1-下载"><a href="#1-下载" class="headerlink" title="1. 下载"></a>1. 下载</h4><p>   wget <a href="https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tar.xz" target="_blank" rel="noopener">https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tar.xz</a></p>
+<h4 id="2-解压缩和解归档"><a href="#2-解压缩和解归档" class="headerlink" title="2. 解压缩和解归档"></a>2. 解压缩和解归档</h4><p>   xz -d Python-3.7.3.tar.xz<br>    tar -xvf Python-3.7.3.tar</p>
+<h4 id="3-补充依赖库"><a href="#3-补充依赖库" class="headerlink" title="3. 补充依赖库"></a>3. 补充依赖库</h4><p>   yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel libffi-devel</p>
+<h4 id="4-进入Python源代码目录安装前准备工作"><a href="#4-进入Python源代码目录安装前准备工作" class="headerlink" title="4. 进入Python源代码目录安装前准备工作"></a>4. 进入Python源代码目录安装前准备工作</h4><p>   cd Python-3.7.3<br>    ./configure –prefix=/usr/local/python37 –enable-optimizations</p>
+<h4 id="5-构建和安装"><a href="#5-构建和安装" class="headerlink" title="5. 构建和安装"></a>5. 构建和安装</h4><p>   make &amp;&amp; make install</p>
+<h4 id="6-注册PATH环境变量"><a href="#6-注册PATH环境变量" class="headerlink" title="6. 注册PATH环境变量"></a>6. 注册PATH环境变量</h4><p>   cd ~<br>    vim .bash_profile</p>
+<p> PATH=…:/usr/local/python37/bin</p>
+<h4 id="7-激活环境变量"><a href="#7-激活环境变量" class="headerlink" title="7. 激活环境变量"></a>7. 激活环境变量</h4><p>   source .bash_profile</p>
+<h4 id="8-测试安装是否成功"><a href="#8-测试安装是否成功" class="headerlink" title="8. 测试安装是否成功"></a>8. 测试安装是否成功</h4><p>   python3 –version</p>
 
             </div>
             <hr>
@@ -554,7 +561,7 @@
                     </span>
                     <a href="http://yoursite.com" class="b-link-green">曹志华的博客</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/04/15/fsda/" class="b-link-green">个人博客搭建</a>
+                    <a href="/2019/04/16/Linux系统下的软件安装/" class="b-link-green">Linux系统下的软件安装</a>
                 </p>
             </div>
         </div>
@@ -562,6 +569,28 @@
 
     
 
+    
+        <link rel="stylesheet" href="/libs/gitment/gitment-default.css">
+<link rel="stylesheet" href="/css/gitment.css">
+
+<div class="gitment-card card" data-aos="fade-up">
+    <div id="gitment-content" class="card-content"></div>
+</div>
+
+<script src="/libs/gitment/gitment.js"></script>
+<script>
+var gitment = new Gitment({
+    id: 'Tue Apr 16 2019 12:47:25 GMT+0800',
+    owner: '',
+    repo: '',
+    oauth: {
+        client_id: '',
+        client_secret: ''
+    }
+});
+
+gitment.render('gitment-content');
+</script>
     
 
     
@@ -577,27 +606,34 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-dot-circle-o"></i>&nbsp;Current
-            </div>
+                <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2019/04/15/fsda/">
+                <a href="/2019/04/19/Vim的使用/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="个人博客搭建">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="Vim的使用">
                         
-                        <span class="card-title">个人博客搭建</span>
+                        <span class="card-title">Vim的使用</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">使用Hexo搭建个人博客
+                    <div class="summary">Vim的使用
 
-准备工作~ 安装node.js —&gt; npm —&gt; hexo-cli~ 安装git —&gt; 版本控制工具
-更换npm（nodejs package manager）源npm config set </div>
+启动vim
+
+
+vim 文件名
+
+
+vim的三种模式：
+
+
+命令模式 - 按键代表命令 —i或者a—&gt; 编辑模式   ​       —:或者/—&gt; 末行模式   ~ G - 光标移到文件末尾 / 500G - </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-15
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-19
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-user fa-fw"></i>
@@ -606,7 +642,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>

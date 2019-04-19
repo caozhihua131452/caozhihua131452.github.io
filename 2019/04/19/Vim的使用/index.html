@@ -4,11 +4,19 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="个人博客搭建, 曹志华的博客">
-    <meta name="description" content="使用Hexo搭建个人博客
+    <meta name="keywords" content="Vim的使用, 曹志华的博客">
+    <meta name="description" content="Vim的使用
 
-准备工作~ 安装node.js —&amp;gt; npm —&amp;gt; hexo-cli~ 安装git —&amp;gt; 版本控制工具
-更换npm（nodejs package manager）源npm config set ">
+启动vim
+
+
+vim 文件名
+
+
+vim的三种模式：
+
+
+命令模式 - 按键代表命令 —i或者a—&amp;gt; 编辑模式   ​       —:或者/—&amp;gt; 末行模式   ~ G - 光标移到文件末尾 / 500G - ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +24,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>个人博客搭建 | 曹志华的博客</title>
+    <title>Vim的使用 | 曹志华的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -58,7 +66,7 @@
             
             <i class="fa fa-home"></i>
             
-            <span>Index</span>
+            <span>首页</span>
         </a>
     </li>
     
@@ -67,7 +75,7 @@
             
             <i class="fa fa-tags"></i>
             
-            <span>Tags</span>
+            <span>标签</span>
         </a>
     </li>
     
@@ -76,7 +84,7 @@
             
             <i class="fa fa-bookmark"></i>
             
-            <span>Categories</span>
+            <span>分类</span>
         </a>
     </li>
     
@@ -85,7 +93,7 @@
             
             <i class="fa fa-archive"></i>
             
-            <span>Archives</span>
+            <span>档案</span>
         </a>
     </li>
     
@@ -94,7 +102,7 @@
             
             <i class="fa fa-user-circle-o"></i>
             
-            <span>About</span>
+            <span>关于</span>
         </a>
     </li>
     
@@ -103,7 +111,7 @@
             
             <i class="fa fa-address-book"></i>
             
-            <span>Friends</span>
+            <span>朋友</span>
         </a>
     </li>
     
@@ -138,7 +146,7 @@
                 
                 <i class="fa fa-fw fa-home"></i>
                 
-                Index
+                首页
             </a>
         </li>
         
@@ -147,7 +155,7 @@
                 
                 <i class="fa fa-fw fa-tags"></i>
                 
-                Tags
+                标签
             </a>
         </li>
         
@@ -156,7 +164,7 @@
                 
                 <i class="fa fa-fw fa-bookmark"></i>
                 
-                Categories
+                分类
             </a>
         </li>
         
@@ -165,7 +173,7 @@
                 
                 <i class="fa fa-fw fa-archive"></i>
                 
-                Archives
+                档案
             </a>
         </li>
         
@@ -174,7 +182,7 @@
                 
                 <i class="fa fa-fw fa-user-circle-o"></i>
                 
-                About
+                关于
             </a>
         </li>
         
@@ -183,7 +191,7 @@
                 
                 <i class="fa fa-fw fa-address-book"></i>
                 
-                Friends
+                朋友
             </a>
         </li>
         
@@ -278,13 +286,13 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        个人博客搭建
+                        Vim的使用
                     </div>
                 </div>
             </div>
@@ -387,7 +395,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-04-15
+                    2019-04-19
                 </div>
 
                 
@@ -403,17 +411,35 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>使用Hexo搭建个人博客</p>
+                <p>Vim的使用</p>
 <ol>
-<li>准备工作<br>~ 安装node.js —&gt; npm —&gt; hexo-cli<br>~ 安装git —&gt; 版本控制工具</li>
-<li>更换npm（nodejs package manager）源<br>npm config set registry <img src="file:///C:\Users\Administrator\AppData\Local\Temp\ksohtml\wpsA06E.tmp.jpg" alt="img"><a href="http://registry.npm.taobao.org/" target="_blank" rel="noopener">http://registry.npm.taobao.org/</a></li>
-<li>安装hexo-cli<br>npm install -g hexo-cli</li>
-<li>使用hexo搭建博客<br>hexo init blog —&gt; 创建博客目录<br>cd blog —&gt; 进入目录<br>npm install —&gt; 安装项目依赖项</li>
-<li>编辑博客<br>把写好的markdown文件放到source/_posts目录下<br>hexo generate —&gt; 用markdown生成博客页面</li>
-<li>将博客托管到github<br>github提供了pages服务专门用来托管个人网站<br>注册github账号并登陆，创建一个托管网站代码的仓库<br>仓库的名字必须是：用户名.<img src="file:///C:\Users\Administrator\AppData\Local\Temp\ksohtml\wpsA06F.tmp.jpg" alt="img">github.io<br>修改博客的配置文件：_config.yml<br><img src="file:///C:\Users\Administrator\AppData\Local\Temp\ksohtml\wpsA070.tmp.jpg" alt="img"><a href="https://github.com/hellokitty12345678/hellokitty12345678.github.io.git" target="_blank" rel="noopener">https://github.com/hellokitty12345678/hellokitty12345678.github.io.git</a><br>deploy:<br>type: git<br>repo: 仓库的完整的URL<br>branch: master</li>
-<li>将博客部署到github<br>安装git部署器<br>npm install hexo-deployer-git –save<br>如果第一次使用git需要先配置用户名和邮箱（可以乱写）<br>git config –global user.email “<a href="mailto:1029751919@qq.com" target="_blank" rel="noopener">1029751919@qq.com</a>“<br>git config –global <img src="file:///C:\Users\Administrator\AppData\Local\Temp\ksohtml\wpsA071.tmp.jpg" alt="img">user.name “hellokitty”<br>执行部署操作<br>hexo deploy -g<br>此操作会提示输入github的账号和密码<br>输入密码时没有回显必须一气呵成的输入完成<br>否则重新执行上面的命令</li>
-<li>绑定自己的域名<br>打开阿里云的控制台 <img src="file:///C:\Users\Administrator\AppData\Local\Temp\ksohtml\wpsA072.tmp.jpg" alt="img"><a href="https://aliyun.com" target="_blank" rel="noopener">https://aliyun.com</a> 登录进去<br>进入“域名控制台” —&gt; “进入域名解析列表” —&gt; 找到自己的域名<br>—&gt; “解析设置” —&gt; “添加记录” —&gt;<br>记录类型：CNAME<br>主机记录：@<br>记录值：<img src="file:///C:\Users\Administrator\AppData\Local\Temp\ksohtml\wpsA073.tmp.jpg" alt="img">hellokitty12345678.github.io<br>在blog/source目录下创建一个名为CNAME的文件<br>文件里面写上自己的域名<br>jackfrued.top<br>重新执行部署命令<br>hexo d -g</li>
+<li>启动vim</li>
 </ol>
+<ul>
+<li>vim 文件名</li>
+</ul>
+<ol start="2">
+<li>vim的三种模式：</li>
+</ol>
+<ul>
+<li>命令模式 - 按键代表命令 —i或者a—&gt; 编辑模式<br>   ​       —:或者/—&gt; 末行模式<br>   ~ G - 光标移到文件末尾 / 500G - 光标移到第500行 / gg - 光标移到行首 / hjkl - 左下右上（前面可以加数字）<br>   ~ Ctrl+y / Ctrl+e - 移动一行<br>   ~ Ctrl+f / Ctrl+b - 翻一页<br>   ~ 0 - 光标到行首 / $ - 光标到行尾 / w - 光标移到下一个单词<br>   ~ dd - 删除光标所在行 / 100dd - 从光标所在行向下删除100行 / dw - 删除一个单词 / d0 - 从光标所在的位置删除到行首 / d$ - 从光标所在的位置删除到行尾<br>   ~ yy - 复制光标所在行 / 10yy - 从光标所在行开始复制10行<br>   ~ p - 粘贴 / 5p - 粘贴5遍<br>   ~ u - 撤销 / ctrl+r - 恢复</li>
+<li>编辑模式 - 键入内容 —Esc—&gt; 命令模式</li>
+<li>末行模式 - 搜索/配置/执行系统命令 —Enter—&gt; 命令模式<br>~ set nu - 显示行号 - set nonu<br>~ syntax on - 显示高亮语法 - syntax off<br>~ set ts=4 - 修改制表键的空格数<br>~ set expandtab - 将制表键处理为空格<br>~ set autoindent - 启用自动缩进代码<br>~ set ruler - 显示光标所在的位置 - set noruler</li>
+<li>映射快捷键：<br>~ map <f2> gg99999dd<br>~ inoremap _main if <strong>name</strong> == ‘<strong>main</strong>‘:</f2></li>
+<li>多文件操作：<br>~ :ls - 查看所有打开的文件<br>~ :b 数字 - 指定显示哪个文件<br>~ :vs - 垂直拆分窗口<br>~ :sp - 水平拆分窗口<br>~ Ctrl+w两次 - 切换窗口<br>~ :qa - 退出所有窗口<br>~ vim -d 文件1 文件2 - 打开多文件进行版本比较</li>
+</ul>
+<p>面向对象编程：</p>
+<ol>
+<li>定义类（数据抽象（找名词） - 属性、行为抽象（找动词） - 方法）</li>
+<li>创建对象（构造器语法）</li>
+<li>给对象发消息（调用对象的方法）</li>
+</ol>
+<p>面向对象的三大支柱：封装、继承、多态</p>
+<p>类和类之间的关系：<br>~ 继承（is-a）<br>~ 关联（has-a）- 聚合/合成<br>~ 依赖（use-a）</p>
+<p>创建链接<br>~ 硬链接（给磁盘文件增加了新的引用，只要引用数不为0文件就不会消失）<br>~ 软链接（相当于Windows系统下的快捷方式）</p>
+<ul>
+<li>ln -s /usr/local/python37/bin/python3 /usr/bin/python3</li>
+</ul>
 
             </div>
             <hr>
@@ -554,7 +580,7 @@
                     </span>
                     <a href="http://yoursite.com" class="b-link-green">曹志华的博客</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/04/15/个人博客搭建/" class="b-link-green">个人博客搭建</a>
+                    <a href="/2019/04/19/Vim的使用/" class="b-link-green">Vim的使用</a>
                 </p>
             </div>
         </div>
@@ -562,6 +588,28 @@
 
     
 
+    
+        <link rel="stylesheet" href="/libs/gitment/gitment-default.css">
+<link rel="stylesheet" href="/css/gitment.css">
+
+<div class="gitment-card card" data-aos="fade-up">
+    <div id="gitment-content" class="card-content"></div>
+</div>
+
+<script src="/libs/gitment/gitment.js"></script>
+<script>
+var gitment = new Gitment({
+    id: 'Fri Apr 19 2019 00:00:00 GMT+0800',
+    owner: '',
+    repo: '',
+    oauth: {
+        client_id: '',
+        client_secret: ''
+    }
+});
+
+gitment.render('gitment-content');
+</script>
     
 
     
@@ -577,27 +625,26 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-dot-circle-o"></i>&nbsp;Current
-            </div>
+                <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2019/04/15/个人博客搭建/">
+                <a href="/2019/04/19/网络相关命令/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="个人博客搭建">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="网络相关命令">
                         
-                        <span class="card-title">个人博客搭建</span>
+                        <span class="card-title">网络相关命令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">使用Hexo搭建个人博客
-
-准备工作~ 安装node.js —&gt; npm —&gt; hexo-cli~ 安装git —&gt; 版本控制工具
-更换npm（nodejs package manager）源npm config set </div>
+                    <div class="summary">查找命令：~ grep - 搜索字符串（支持正则表达式）~ find - 搜索文件
+-name - 根据名字搜索 - find / -name &quot;*.html&quot;
+-size - 根据大小搜索 - -10M / +10M
+</div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-15
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-19
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-user fa-fw"></i>
@@ -606,7 +653,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -617,24 +663,22 @@
                 Next&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/04/15/hello-world/">
+                <a href="/2019/04/16/Linux系统下的软件安装/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="linux 的常用快捷键">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Linux系统下的软件安装">
                         
-                        <span class="card-title">linux 的常用快捷键</span>
+                        <span class="card-title">Linux系统下的软件安装</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">计算机由硬件和软件构成
-计算机硬件的五大部件：运算器、控制器、存储器、输入设备、输出设备
-计算机软件：系统软件（操作系统、编译程序）和应用软件
-操作系统会负责管理和操作硬件，并提供简单的人机交互的接口
-Ken Thompson / Denn</div>
+                    <div class="summary">Linux系统下的软件安装：redhat package manageryellowdog updater modified
+1. 包管理工具 - yum / rpm / apt
+yum search nginx - 从默认的仓库搜索有没有</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-15
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-16
                             </span>
                         <span class="publish-author">
                             

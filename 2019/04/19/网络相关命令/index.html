@@ -4,12 +4,11 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="linux 的常用快捷键, 曹志华的博客">
-    <meta name="description" content="计算机由硬件和软件构成
-计算机硬件的五大部件：运算器、控制器、存储器、输入设备、输出设备
-计算机软件：系统软件（操作系统、编译程序）和应用软件
-操作系统会负责管理和操作硬件，并提供简单的人机交互的接口
-Ken Thompson / Denn">
+    <meta name="keywords" content="网络相关命令, 曹志华的博客">
+    <meta name="description" content="查找命令：~ grep - 搜索字符串（支持正则表达式）~ find - 搜索文件
+-name - 根据名字搜索 - find / -name &amp;quot;*.html&amp;quot;
+-size - 根据大小搜索 - -10M / +10M
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +16,7 @@ Ken Thompson / Denn">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>linux 的常用快捷键 | 曹志华的博客</title>
+    <title>网络相关命令 | 曹志华的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -279,13 +278,13 @@ Ken Thompson / Denn">
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        linux 的常用快捷键
+                        网络相关命令
                     </div>
                 </div>
             </div>
@@ -388,7 +387,7 @@ Ken Thompson / Denn">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-04-15
+                    2019-04-19
                 </div>
 
                 
@@ -404,90 +403,40 @@ Ken Thompson / Denn">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>计算机由硬件和软件构成</p>
-<p>计算机硬件的五大部件：运算器、控制器、存储器、输入设备、输出设备</p>
-<p>计算机软件：系统软件（操作系统、编译程序）和应用软件</p>
-<p>操作系统会负责管理和操作硬件，并提供简单的人机交互的接口</p>
-<p>Ken Thompson / Dennis Ritchie —&gt; Unix (1970s)</p>
-<p>Xerox（施乐） —&gt; GUI / 鼠标 / 以太网<br>1980s — IBM PC</p>
-<p>Unix —&gt; BSD —&gt; AIX (IBM)<br>Unix —&gt; System V —&gt; Solaris (SUN)<br>Uinx —&gt; System III —&gt; HP-UX (HP)<br>Unix —&gt; BSD —&gt; FreeBSD —&gt; Macintosh (Apple) —&gt; macOS —&gt; iOS / watchOS / tvOS<br>Unix —&gt; Minix (Andrew Tanenbaum) —&gt; Linux (Linus Torvalds) —&gt; Android (Google)</p>
-<h4 id="Linux发型版本"><a href="#Linux发型版本" class="headerlink" title="Linux发型版本"></a>Linux发型版本</h4><ul>
-<li>Redhat</li>
-<li>Ubuntu — 个人</li>
-<li>CentOS — 服务器 — 远程访问</li>
-<li>Fedora</li>
-<li>SUSE</li>
-<li>Debian</li>
-</ul>
-<h4 id="个人操作系统-Windows-macOS"><a href="#个人操作系统-Windows-macOS" class="headerlink" title="个人操作系统 - Windows / macOS"></a>个人操作系统 - Windows / macOS</h4><p>服务器操作系统 - 商用Unix / Linux / Windows Server</p>
-<p>多用户多任务操作系统</p>
-<p>要求：基本使用 / 安装和配置服务 / 部署项目</p>
-<p>命令 [命令的参数][命令作用的对象]<br>ls  -laR        .pip<br>cat             /proc/cpuinfo<br>cat -n            /proc/cpuinfo</p>
-<p>command not found - 命令没有找到（敲了无效的命令）</p>
-<h4 id="Linux常用命令："><a href="#Linux常用命令：" class="headerlink" title="Linux常用命令："></a>Linux常用命令：</h4><ol>
-<li><p>w / who / whoami / last - 查看登录用户情况</p>
-</li>
-<li><p>adduser / passwd - 创建用户修改密码</p>
-</li>
-<li><p>date / cal - 查看日期日历</p>
-</li>
-<li><p>write / wall / mesg - 发送消息</p>
-</li>
-<li><p>clear - 清除屏幕</p>
-</li>
-<li><p>logout / exit - 退出登录</p>
-</li>
-<li><p>man / info / –help - 查看帮助</p>
-</li>
-<li><p>history - 历史命令 - !命名编号 - 再次执行历史命令</p>
-</li>
-<li><p>reboot - 重启系统 - init 6</p>
-</li>
-<li><p>shutdown - 关机 - init 0</p>
-</li>
-</ol>
-<h4 id="Linux文件操作相关命令："><a href="#Linux文件操作相关命令：" class="headerlink" title="Linux文件操作相关命令："></a>Linux文件操作相关命令：</h4><ol>
-<li>pwd - print working directory - 打印工作目录</li>
-<li>cd - change directory - 改变目录 - 相对路径和绝对路径</li>
-<li>ls - list directory contents - 列出目录下的内容<br>-l - 长格式查看<br> -a - 查看所有文件 - 在Linux系统中以点开头的文件和文件夹是隐藏的<br> -R - 递归式的查看 - 遇到文件夹要递归的列出文件夹下的内容</li>
-<li>cat - concatenate - 连接多个文件（查看文件的内容）</li>
-<li>touch - 创建空文件或者修改已有文件的最后访问时间</li>
-<li>mkdir - make directory - 创建文件夹<br>-p - 如果需要就创建父文件夹</li>
-<li>rm - remove - 删除<br>-f - 强制删除<br> -r - 递归删除 - 删文件夹需要指定该参数</li>
-<li>rmdir - remove empty directory - 删除空文件夹</li>
-<li>wget - 通过网络获取文件</li>
-</ol>
-<ul>
-<li>例如：wget (file:///C:\Users\Administrator\AppData\Local\Temp\%W@GJ$ACOF(TYDYECOKVDYB.png)<a href="https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tar.xz" target="_blank" rel="noopener">https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tar.xz</a></li>
-<li>例如：wget (file:///C:\Users\Administrator\AppData\Local\Temp\%W@GJ$ACOF(TYDYECOKVDYB.png)<a href="https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tgz" target="_blank" rel="noopener">https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tgz</a></li>
-</ul>
-<ol start="10">
-<li>gzip / gunzip - 文件压缩/解压缩（gz/tgz）</li>
-</ol>
-<ul>
-<li>例如：gunzip Python-3.7.3.tgz</li>
-</ul>
-<ol start="11">
-<li>xz - 文件压缩/解压缩（xz）<br>-z - 压缩<br>-d - 解压缩<ul>
-<li>例如：xz -d Python-3.7.3.xz</li>
-</ul>
-</li>
-<li>tar - archive - 文件归档/解归档<br>-xvf - 解归档（将一个文件拆成多个文件）<ul>
-<li>例如：tar -xvf Python-3.7.3.tar<br>-cvf - 创建归档文件（将多个文件合并成一个文件）</li>
-</ul>
-</li>
-<li>wc - word count - 查看文件行数、单词数、字符数<br>-l - 查看行数<br>-w - 查看单词数<br>-c - 查看字符数</li>
-<li>sort - 文件排序<br>-r - 降序（默认是从小到大 - 升序）</li>
-<li>uniq - unique - 文件去重（相邻相同的内容会被过滤掉）</li>
-<li>head / tail - 查看文件的开头/结尾部分</li>
-<li>more / less - 分页查看文件<ul>
-<li>例子：cat -n taobao.html | more</li>
-</ul>
-</li>
-<li>diff - different - 比较文件的差别</li>
-</ol>
-<h4 id="组合快捷键"><a href="#组合快捷键" class="headerlink" title="组合快捷键"></a>组合快捷键</h4><p>Ctrl+D - 结束输入<br>Ctrl+C - 中断一个正在执行的命令<br>Ctrl+W - 删除命令中的一块<br>Ctrl+A - 光标到行首<br>Ctrl+E - 光标到行尾</p>
-<h4 id="Python-解释器"><a href="#Python-解释器" class="headerlink" title="Python - 解释器"></a>Python - 解释器</h4><p>CPython - C语言实现的Python解释器<br>Jython - Java语言实现的Python解释器<br>IronPython - C#语言实现的Python解释器<br>PyPy - Python语言实现的Python解释器</p>
+                <p>查找命令：<br>~ grep - 搜索字符串（支持正则表达式）<br>~ find - 搜索文件</p>
+<pre><code>-name - 根据名字搜索 - find / -name &quot;*.html&quot;
+-size - 根据大小搜索 - -10M / +10M
+-type - 根据类型搜索 - d / f / l / s
+-atime - 最后访问时间
+-mtime - 最后修改时间 - find . -mtime 0 
+-ctime - 创建时间
+</code></pre><p>网络相关命令：<br>~ ssh - 安全远程连接 - 例如：ssh <a href="mailto:root@39.104.170.48" target="_blank" rel="noopener">root@39.104.170.48</a><br>~ scp - 安全文件拷贝 - 例如：scp -r /root/code <a href="mailto:root@39.104.170.48" target="_blank" rel="noopener">root@39.104.170.48</a>:/root/code2<br>~ sftp - 安全文件传输（file transfer protocol） - 例如：sftp <a href="mailto:root@39.104.170.48" target="_blank" rel="noopener">root@39.104.170.48</a></p>
+<pre><code>- put - 上传
+- get - 下载
+- bye - 退出
+- help - 查看帮助
+</code></pre><p>~ ping - 检查网络可达性 - ICMP - Internet Control Management Protocol - 网络层</p>
+<pre><code>- ttl - time to live
+- PING TO DEATH - DDoS - Distributed Deny of Service - 分布式拒绝服务攻击
+</code></pre><p>网络相关命令：<br>~ ssh - 安全远程连接 - 例如：ssh <a href="mailto:root@39.104.170.48" target="_blank" rel="noopener">root@39.104.170.48</a><br>~ scp - 安全文件拷贝 - 例如：scp -r /root/code <a href="mailto:root@39.104.170.48" target="_blank" rel="noopener">root@39.104.170.48</a>:/root/code2<br>~ sftp - 安全文件传输（file transfer protocol） - 例如：sftp <a href="mailto:root@39.104.170.48" target="_blank" rel="noopener">root@39.104.170.48</a></p>
+<pre><code>- put - 上传
+- get - 下载
+- bye - 退出
+- help - 查看帮助
+</code></pre><p>~ ping - 检查网络可达性 - ICMP - Internet Control Management Protocol - 网络层</p>
+<pre><code>- ttl - time to live
+- PING TO DEATH - DDoS - Distributed Deny of Service - 分布式拒绝服务攻击
+</code></pre><p>~ ifconfig / ip</p>
+<pre><code>- 127.0.0.1 - 回环地址 - localhost
+</code></pre><p>~ netstat</p>
+<pre><code>- netstat -nap | grep 进程或者端口
+    ~ p - process - 查看进程信息（进程编号和进程名字）
+</code></pre><p>~ kill 进程号<br>​    </p>
+<p>启动停止重启服务：<br>service nginx start</p>
+<p>systemctl start nginx<br>systemctl stop nginx<br>systemctl restart nginx<br>systemctl status nginx<br>systemctl enable nginx<br>systemctl disable nginx</p>
+<p><a href="http://www.baidu.com" target="_blank" rel="noopener">www.baidu.com</a> — DNS —&gt; 14.215.177.38 </p>
+<p>进程操作相关命令：<br>~ ps - processes<br>~ kill<br>~ jobs<br>~ fg / bg - foreground / background<br>~ top</p>
+<p>进程操作相关命令：<br>~ 命令 &amp; - 把命令放到后台运行<br>~ Ctrl+z - 把前台命令停下来放到后台<br>~ ps - processes - 例如：ps -ef | grep redis<br>~ kill - 结束进程<br>~ jobs - 查看后台运行或停止的进程<br>~ fg - foreground - 将后台命令置于前台<br>~ bg - background - 让命令在后台运行<br>~ top - 相当于是Windows下的任务管理器 - 可以查看进程占用CPU、内存等资源的情况</p>
 
             </div>
             <hr>
@@ -628,7 +577,7 @@ Ken Thompson / Denn">
                     </span>
                     <a href="http://yoursite.com" class="b-link-green">曹志华的博客</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/04/15/hello-world/" class="b-link-green">linux 的常用快捷键</a>
+                    <a href="/2019/04/19/网络相关命令/" class="b-link-green">网络相关命令</a>
                 </p>
             </div>
         </div>
@@ -647,7 +596,7 @@ Ken Thompson / Denn">
 <script src="/libs/gitment/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-    id: 'Mon Apr 15 2019 11:04:56 GMT+0800',
+    id: 'Fri Apr 19 2019 15:39:29 GMT+0800',
     owner: '',
     repo: '',
     oauth: {
@@ -673,25 +622,27 @@ gitment.render('gitment-content');
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2019/04/16/Linux系统下的软件安装/">
+                <a href="/2019/04/19/网络相关命令/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Linux系统下的软件安装">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="网络相关命令">
                         
-                        <span class="card-title">Linux系统下的软件安装</span>
+                        <span class="card-title">网络相关命令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">Linux系统下的软件安装：redhat package manageryellowdog updater modified
-1. 包管理工具 - yum / rpm / apt
-yum search nginx - 从默认的仓库搜索有没有</div>
+                    <div class="summary">查找命令：~ grep - 搜索字符串（支持正则表达式）~ find - 搜索文件
+-name - 根据名字搜索 - find / -name &quot;*.html&quot;
+-size - 根据大小搜索 - -10M / +10M
+</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-16
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-19
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-user fa-fw"></i>
@@ -700,6 +651,7 @@ yum search nginx - 从默认的仓库搜索有没有</div>
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -710,21 +662,31 @@ yum search nginx - 从默认的仓库搜索有没有</div>
                 Next&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2018/09/07/fsda/">
+                <a href="/2019/04/19/Vim的使用/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="个人博客搭建">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="Vim的使用">
                         
-                        <span class="card-title">个人博客搭建</span>
+                        <span class="card-title">Vim的使用</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">使用Hexo搭建个人博客1. 准备工作   ~ 安装node.js —&gt; npm —&gt; hexo-cli   ~ 安装git —&gt; 版本控制工具
-2. 更换npm（nodejs package manager）源   np</div>
+                    <div class="summary">Vim的使用
+
+启动vim
+
+
+vim 文件名
+
+
+vim的三种模式：
+
+
+命令模式 - 按键代表命令 —i或者a—&gt; 编辑模式   ​       —:或者/—&gt; 末行模式   ~ G - 光标移到文件末尾 / 500G - </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-09-07
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-19
                             </span>
                         <span class="publish-author">
                             
